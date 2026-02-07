@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_project/reprository/widgets/image_helper_widget.dart';
+import 'package:ui_project/reprository/widgets/text_helper_widget.dart';
 
 class Loginscreen extends StatelessWidget {
   Loginscreen({super.key});
@@ -68,6 +69,86 @@ class Loginscreen extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                     fontSize: 20,
                     letterSpacing: -0.3,
+                  ),
+                ),
+
+                SizedBox(height: 20),
+
+                Card(
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Container(
+                    height: 200,
+                    width: 350,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color(0xFFFFFFFF),
+                    ),
+                    child: Column(
+                      children: [
+                        SizedBox(height: 20),
+                        TextHelperWidget(text: 'Md.Samiul Islam'),
+                        SizedBox(height: 5),
+                        Text(
+                          "Samiul@diu.edu.bd",
+                          style: TextStyle(
+                            color: Color(0xFF9C9C9C),
+                            letterSpacing: -0.3,
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        SizedBox(
+                          height: 48,
+                          width: 295,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color(0xFFE23744),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            ),
+                            onPressed: () {},
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'Login with',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
+                                SizedBox(width: 5),
+                                ImageHelperWidget(
+                                  image: 'zomato.png',
+                                  height: 15.44,
+                                  width: 73,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 5),
+                        Text(
+                          'Access your saved addresses from Zomato automatically!',
+                          style: TextStyle(
+                            fontSize: 10,
+                            height: 1.5,
+                            fontWeight: FontWeight.w400,
+                            letterSpacing: -0.3,
+                            color: Color(0xFF9C9C9C),
+                          ),
+                        ),
+                        SizedBox(height: 30),
+                        Text(
+                          'or login with phone number',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: -0.3,
+                            color: Color(0xFF269237),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
