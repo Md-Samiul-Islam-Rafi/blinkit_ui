@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_project/reprository/screens/bottomnav/bottomnavscreen.dart';
 import 'package:ui_project/reprository/widgets/image_helper_widget.dart';
 import 'package:ui_project/reprository/widgets/text_helper_widget.dart';
 
@@ -109,7 +110,14 @@ class Loginscreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10),
                               ),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => BottomnavScreen()
+                                ),
+                              );
+                            },
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
