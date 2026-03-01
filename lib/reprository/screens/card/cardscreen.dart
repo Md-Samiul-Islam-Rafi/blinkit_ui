@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_project/reprository/widgets/search_card.dart';
+import 'package:ui_project/reprository/common_widgets/search_card.dart';
 
 class Cardscreen extends StatelessWidget {
   const Cardscreen({super.key});

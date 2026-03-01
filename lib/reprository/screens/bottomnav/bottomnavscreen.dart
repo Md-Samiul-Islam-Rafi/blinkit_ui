@@ -3,7 +3,7 @@ import 'package:ui_project/reprository/screens/card/cardscreen.dart';
 import 'package:ui_project/reprository/screens/category/categoryscreen.dart';
 import 'package:ui_project/reprository/screens/home/homescreen.dart';
 import 'package:ui_project/reprository/screens/print/printscreen.dart';
-import 'package:ui_project/reprository/widgets/image_helper_widget.dart';
+import 'package:ui_project/reprository/common_widgets/image_helper_widget.dart';
 
 class BottomnavScreen extends StatefulWidget {
   //1st

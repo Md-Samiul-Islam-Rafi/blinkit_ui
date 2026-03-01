@@ -1,0 +1,163 @@
+List<Map<String, dynamic>> groceryAndKitchenProducts = [
+  {
+    "id": "1",
+    "title": "vagetable & Fruits",
+    "discription": "Fresh and Organic vegetable and fruits",
+    "image": "assets/images/image 41.png",
+  },
+  {
+    "id": "2",
+    "title": "Atta, Dal & Rice",
+    "discription": "Daily essential grains and lentils",
+    "image": "assets/images/image 42.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "3",
+    "title": "Oil, Ghee & Masala",
+    "discription": "Cooking oils, ghee and spices",
+    "image": "assets/images/image 43.png",
+  },
+  {
+    "id": "4",
+    "title": "Dairy, Bread & Milk",
+    "discription": "Fresh and Organic vegetable and fruits",
+    "image": "assets/images/image 44.png",
+  },
+  {
+    "id": "5",
+    "title": "Biscuits & Bake",
+    "discription": "Snacks, biscuits and baked foods",
+    "image": "assets/images/image 45.png",
+  },
+  {
+    "id": "5",
+    "title": "Biscuits & Bake",
+    "discription": "Snacks, biscuits and baked foods",
+    "image": "assets/images/image 45.png",
+  },
+  {
+    "id": "5",
+    "title": "Biscuits & Bake",
+    "discription": "Snacks, biscuits and baked foods",
+    "image": "assets/images/image 45.png",
+  },
+  {
+    "id": "5",
+    "title": "Biscuits & Bake",
+    "discription": "Snacks, biscuits and baked foods",
+    "image": "assets/images/image 45.png",
+  },
+];
+
+List<Map<String, dynamic>> snacksAndDrinksProducts = [
+  {"id": "1", "title": "Chips & Namkeens", "image": "assets/images/chips.png"},
+  {
+    "id": "2",
+    "title": "Sweets & Chocalates",
+    "image": "assets/images/sweets.png",
+  },
+  {"id": "3", "title": "Drinks & Juices", "image": "assets/images/drinks.png"},
+  {"id": "4", "title": "Sauces & Spreads", "image": "assets/images/sauces.png"},
+  {
+    "id": "5",
+    "title": "Beauty & Cosmetics",
+    "image": "assets/images/beauty.png",
+  },
+  {"id": "1", "title": "Chips & Namkeens", "image": "assets/images/chips.png"},
+  {
+    "id": "2",
+    "title": "Sweets & Chocalates",
+    "image": "assets/images/sweets.png",
+  },
+  {"id": "3", "title": "Drinks & Juices", "image": "assets/images/drinks.png"},
+  {"id": "4", "title": "Sauces & Spreads", "image": "assets/images/sauces.png"},
+  {
+    "id": "5",
+    "title": "Beauty & Cosmetics",
+    "image": "assets/images/beauty.png",
+  },
+];

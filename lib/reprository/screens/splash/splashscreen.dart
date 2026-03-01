@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:ui_project/domain/constants/appcolors.dart';
 import 'package:ui_project/reprository/screens/login/loginscreen.dart';
-import 'package:ui_project/reprository/widgets/image_helper_widget.dart';
+
 
 class Splashscreen extends StatefulWidget {
   const Splashscreen({super.key});

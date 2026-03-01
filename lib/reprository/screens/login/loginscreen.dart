@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_project/reprository/screens/bottomnav/bottomnavscreen.dart';
-import 'package:ui_project/reprository/widgets/image_helper_widget.dart';
-import 'package:ui_project/reprository/widgets/text_helper_widget.dart';
+import 'package:ui_project/reprository/common_widgets/image_helper_widget.dart';
+import 'package:ui_project/reprository/common_widgets/text_helper_widget.dart';
 
 class Loginscreen extends StatelessWidget {
   Loginscreen({super.key});
