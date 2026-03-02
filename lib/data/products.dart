@@ -161,3 +161,22 @@ List<Map<String, dynamic>> snacksAndDrinksProducts = [
     "image": "assets/images/beauty.png",
   },
 ];
+
+ List<Map<String, String>> diwaliCategories = [
+  {
+    "title": "Lights, Diyas & Candles",
+    "image": "assets/images/diya.png",
+  },
+  {
+    "title": "Diwali Gifts",
+    "image": "assets/images/gifts.png",
+  },
+  {
+    "title": "Appliances & Gadgets",
+    "image": "assets/images/gadgets.png",
+  },
+  {
+    "title": "Home & Living",
+    "image": "assets/images/home.png",
+  },
+];

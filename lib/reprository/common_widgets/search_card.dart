@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
 class SearchCard extends StatelessWidget {
-  const SearchCard({super.key, required this.onChange});
+  const SearchCard({super.key, required this.onChange, this.bgcolor = Colors.amber});
 
-  final ValueChanged onChange;
+  final ValueChanged<String> onChange;
+  final Color bgcolor;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(color: Colors.amber),
+      decoration: BoxDecoration(color: bgcolor),
       child: Column(
         spacing: 8,
         mainAxisSize: MainAxisSize.min,

@@ -27,7 +27,7 @@ class ProductCategoryItem extends StatelessWidget {
             ),
             child: Image.asset(
               imagePath,
-              fit: BoxFit.cover,
+              fit: BoxFit.contain,
               width: double.infinity,
               height: double.infinity,
             ),

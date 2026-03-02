@@ -113,7 +113,7 @@ class _CategoryscreenState extends State<Categoryscreen> {
                     ),
 
                     const SizedBox(height: 20),
-
+                    
                     const Text(
                       "Household Essentials",
                       style: TextStyle(
@@ -122,9 +122,7 @@ class _CategoryscreenState extends State<Categoryscreen> {
                         letterSpacing: -0.3,
                       ),
                     ),
-
                     const SizedBox(height: 16),
-
                     SizedBox(
                       height: 110,
                       child: ListView.builder(
@@ -149,9 +147,3 @@ class _CategoryscreenState extends State<Categoryscreen> {
     );
   }
 }
-
-// xyz(title, row)
-// xyz(row)
-
-// xyz(title, row)
-// xyz(title, row)
