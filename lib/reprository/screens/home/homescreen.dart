@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ui_project/data/products.dart'; // Assuming you have this list defined in your products.dart
-import 'package:ui_project/reprository/common_widgets/mega_diwali_card.dart'; // Assuming this is your custom widget for cards
+import 'package:ui_project/data/products.dart';
+import 'package:ui_project/reprository/common_widgets/mega_diwali_card.dart';
 import 'package:ui_project/reprository/common_widgets/search_card.dart';
 
 class Homescreen extends StatelessWidget {
@@ -24,25 +24,22 @@ class Homescreen extends StatelessWidget {
 
           // Mega Diwali Sale Section
           Container(
-            height: 196,
+            height: 210,
             width: double.infinity,
-            color: Color(0xFFEC0505),
+            color: const Color(0xFFEC0505),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                const SizedBox(height: 6),
+
+                // Row
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset(
-                      'assets/images/dawali.png',
-                      width: 50,
-                      height: 57.8,
-                    ),
-                    Image.asset(
-                      'assets/images/dawali1.png',
-                      width: 50,
-                      height: 46.51,
-                    ),
-                    Text(
+                    Image.asset('assets/images/dawali.png', width: 40),
+                    Image.asset('assets/images/dawali1.png', width: 40),
+                    const SizedBox(width: 6),
+                    const Text(
                       'Mega Diwali Sale',
                       style: TextStyle(
                         fontSize: 20,
@@ -51,34 +48,99 @@ class Homescreen extends StatelessWidget {
                         letterSpacing: -0.3,
                       ),
                     ),
-                    Image.asset(
-                      'assets/images/dawali1.png',
-                      width: 50,
-                      height: 46.51,
-                    ),
-                    Image.asset(
-                      'assets/images/dawali.png',
-                      width: 50,
-                      height: 57.8,
-                    ),
-                    SizedBox(height: 20),
+                    const SizedBox(width: 6),
+                    Image.asset('assets/images/dawali1.png', width: 40),
+                    Image.asset('assets/images/dawali.png', width: 40),
                   ],
                 ),
-                SizedBox(height: 10),
-                // Fixed the issue here by adding itemCount
+
+                const SizedBox(height: 12),
+
+                // SizedBox(
+                //   height: 130,
+                //   child: ListView.builder(
+                //     scrollDirection: Axis.horizontal,
+                //     itemCount: diwaliCategories.length,
+                //     padding: const EdgeInsets.symmetric(horizontal: 16),
+                //     itemBuilder: (context, index) {
+                //       return Padding(
+                //         padding: const EdgeInsets.only(right: 12),
+                //         child: MegaDiwaliCard(
+                //           title: diwaliCategories[index]['title']!,
+                //           imagePath: diwaliCategories[index]['image']!,
+                //         ),
+                //       );
+                //     },
+                //   ),
+                // ),
                 SizedBox(
-                  height: 80,
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal, // To make it horizontal
-                    itemCount: diwaliCategories.length,
-                    padding: const EdgeInsets.only(right: 16),
-                    itemBuilder: (context, index) {
-                      return MegaDiwaliCard(
-                        title: diwaliCategories[index]['title']!,
-                        imagePath: diwaliCategories[index]['image']!,
-                      );
-                    },
+                  height: 120,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      spacing: 10,
+                      children: List.generate(diwaliCategories.length, (index) {
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 12),
+                          child: MegaDiwaliCard(
+                            title: diwaliCategories[index]['title']!,
+                            imagePath: diwaliCategories[index]['image']!,
+                          ),
+                        );
+                      }),
+                    ),
                   ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 20),
+          Container(
+            width: 160,
+            padding: EdgeInsets.all(8),
+
+            decoration: BoxDecoration(color: Colors.white),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              //Image Part
+              children: [
+                Image.asset(
+                  'assets/images/golden_glass.png',
+                  height: 100,
+                  width: 100,
+                  fit: BoxFit.contain,
+                ),
+                SizedBox(height: 10),
+                // Images Text part
+                Text(
+                  'Golden Glass Wooden Lid Candle (Oudh)',
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+
+                  maxLines: 2,
+                ),
+                SizedBox(height: 4),
+                //Timer Part
+                Row(
+                  children: [
+                    SizedBox(width: 4),
+                    Image.asset(
+                      'assets/images/timer.png',
+                      height: 16,
+                      width: 16,
+                    ),
+                    SizedBox(height: 4),
+                    Text(
+                      '16 MINS',
+                      style: TextStyle(color: Color(0xFF9C9C9C), fontSize: 14),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 4),
+                // Price Part
+                Text(
+                  '₹79',
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
               ],
             ),

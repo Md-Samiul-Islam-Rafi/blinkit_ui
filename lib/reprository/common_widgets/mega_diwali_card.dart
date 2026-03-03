@@ -13,41 +13,33 @@ class MegaDiwaliCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 86,
-      height: 108,
+      width: 100,
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
-        color: Color(0xFFD9EBEB),
-        borderRadius: BorderRadius.circular(8),
+        color: const Color(0xFFD9EBEB),
+        borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(
-              0.2,
-            ), // Adding opacity to the shadow
-            blurRadius: 5,
-            offset: Offset(0, 2),
+            color: Colors.black.withAlpha(60),
+            blurRadius: 6,
+            offset: const Offset(0, 3),
           ),
         ],
       ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
+          const SizedBox(height: 10),
           Text(
             title,
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+            style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
             textAlign: TextAlign.center,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 2),
 
-          // Use BoxFit.cover for the image to maintain aspect ratio and avoid distortion
-          Image.asset(
-            imagePath,
-            width: 60, // Fixed width for better layout control
-            height: 60, // Fixed height to avoid stretching
-            fit: BoxFit.cover, // Ensures the image fits the container correctly
-          ),
+          Image.asset(imagePath, width: 60, height: 60, fit: BoxFit.contain),
         ],
       ),
     );
