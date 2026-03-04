@@ -20,7 +20,8 @@ class MegadawaliProducts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 160,
-      padding: const EdgeInsets.all(8),
+      height: 230,
+      padding: const EdgeInsets.all(6),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
@@ -98,7 +99,7 @@ class MegadawaliProducts extends StatelessWidget {
             ],
           ),
 
-          const SizedBox(height: 4),
+          const SizedBox(height: 6),
 
           // Price Part
           Text(

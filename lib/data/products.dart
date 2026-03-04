@@ -262,3 +262,55 @@ List<Map<String, String>> diwaliProducts = [
     'price': '₹ 79',
   },
 ];
+
+// Best Sell Products
+List<Map<String, String>> bestSellersProducts = [
+  {
+    'title': 'Amul Taaza Toned Fresh Milk',
+    'image': 'assets/images/milk.png',
+    'time': '16 MINS',
+    'price': '₹ 27',
+  },
+  {
+    'title': 'Potato (Aloo)',
+    'image': 'assets/images/potato.png',
+    'time': '16 MINS',
+    'price': '₹ 37',
+  },
+  {
+    'title': 'Hybrid Tomato',
+    'image': 'assets/images/tomato.png',
+    'time': '16 MINS',
+    'price': '₹ 57',
+  },
+  {
+    'title': 'Potato (Aloo)',
+    'image': 'assets/images/potato.png',
+    'time': '16 MINS',
+    'price': '₹ 37',
+  },
+  {
+    'title': 'Hybrid Tomato',
+    'image': 'assets/images/tomato.png',
+    'time': '16 MINS',
+    'price': '₹ 57',
+  },
+  {
+    'title': 'Golden Glass Wooden Lid Candle (Oudh)',
+    'image': 'assets/images/golden_glass.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+  {
+    'title': 'Royal Gulab Jamun By Bikano',
+    'image': 'assets/images/royel_gulap.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+  {
+    'title': 'Bikaji Bhujia',
+    'image': 'assets/images/bikaji_bhujia.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+];
