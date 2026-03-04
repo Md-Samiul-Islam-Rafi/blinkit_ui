@@ -180,3 +180,85 @@ List<Map<String, String>> diwaliCategories = [
   {"title": "Appliances & Gadgets", "image": "assets/images/gadgets.png"},
   {"title": "Home & Living", "image": "assets/images/home.png"},
 ];
+
+// diwaliProducts
+List<Map<String, String>> diwaliProducts = [
+  {
+    'title': 'Golden Glass Wooden Lid Candle (Oudh)',
+    'image': 'assets/images/golden_glass.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+  {
+    'title': 'Royal Gulab Jamun By Bikano',
+    'image': 'assets/images/royel_gulap.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+  {
+    'title': 'Bikaji Bhujia',
+    'image': 'assets/images/bikaji_bhujia.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+  {
+    'title': 'Royal Gulab Jamun By Bikano',
+    'image': 'assets/images/royel_gulap.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+  {
+    'title': 'Bikaji Bhujia',
+    'image': 'assets/images/bikaji_bhujia.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+  {
+    'title': 'Royal Gulab Jamun By Bikano',
+    'image': 'assets/images/royel_gulap.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+  {
+    'title': 'Bikaji Bhujia',
+    'image': 'assets/images/bikaji_bhujia.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+  {
+    'title': 'Royal Gulab Jamun By Bikano',
+    'image': 'assets/images/royel_gulap.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+  {
+    'title': 'Bikaji Bhujia',
+    'image': 'assets/images/bikaji_bhujia.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+  {
+    'title': 'Royal Gulab Jamun By Bikano',
+    'image': 'assets/images/royel_gulap.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+  {
+    'title': 'Bikaji Bhujia',
+    'image': 'assets/images/bikaji_bhujia.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+  {
+    'title': 'Royal Gulab Jamun By Bikano',
+    'image': 'assets/images/royel_gulap.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+  {
+    'title': 'Bikaji Bhujia',
+    'image': 'assets/images/bikaji_bhujia.png',
+    'time': '16 MINS',
+    'price': '₹ 79',
+  },
+];

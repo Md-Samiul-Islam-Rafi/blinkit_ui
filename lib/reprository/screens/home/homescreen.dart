@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ui_project/data/products.dart';
 import 'package:ui_project/reprository/common_widgets/mega_diwali_card.dart';
+import 'package:ui_project/reprository/common_widgets/product_card.dart';
+import 'package:ui_project/reprository/common_widgets/product_category_card.dart';
 import 'package:ui_project/reprository/common_widgets/search_card.dart';
 
 class Homescreen extends StatelessWidget {
@@ -8,8 +10,10 @@ class Homescreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SingleChildScrollView(
+      // Wrap the entire Column in SingleChildScrollView to make it scrollable
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(height: 35),
 
@@ -31,7 +35,6 @@ class Homescreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(height: 6),
-
                 // Row
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -56,29 +59,12 @@ class Homescreen extends StatelessWidget {
 
                 const SizedBox(height: 12),
 
-                // SizedBox(
-                //   height: 130,
-                //   child: ListView.builder(
-                //     scrollDirection: Axis.horizontal,
-                //     itemCount: diwaliCategories.length,
-                //     padding: const EdgeInsets.symmetric(horizontal: 16),
-                //     itemBuilder: (context, index) {
-                //       return Padding(
-                //         padding: const EdgeInsets.only(right: 12),
-                //         child: MegaDiwaliCard(
-                //           title: diwaliCategories[index]['title']!,
-                //           imagePath: diwaliCategories[index]['image']!,
-                //         ),
-                //       );
-                //     },
-                //   ),
-                // ),
+                // Mega Diwali Sale Cards
                 SizedBox(
                   height: 120,
                   child: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
-                      spacing: 10,
                       children: List.generate(diwaliCategories.length, (index) {
                         return Padding(
                           padding: const EdgeInsets.only(right: 12),
@@ -94,55 +80,63 @@ class Homescreen extends StatelessWidget {
               ],
             ),
           ),
+          // Mega Diwali Sale Section End
           SizedBox(height: 20),
-          Container(
-            width: 160,
-            padding: EdgeInsets.all(8),
 
-            decoration: BoxDecoration(color: Colors.white),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              //Image Part
-              children: [
-                Image.asset(
-                  'assets/images/golden_glass.png',
-                  height: 100,
-                  width: 100,
-                  fit: BoxFit.contain,
-                ),
-                SizedBox(height: 10),
-                // Images Text part
-                Text(
-                  'Golden Glass Wooden Lid Candle (Oudh)',
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
-
-                  maxLines: 2,
-                ),
-                SizedBox(height: 4),
-                //Timer Part
-                Row(
-                  children: [
-                    SizedBox(width: 4),
-                    Image.asset(
-                      'assets/images/timer.png',
-                      height: 16,
-                      width: 16,
+          // Mega Diwali Products
+          SizedBox(
+            height: 240,
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                children: List.generate(diwaliProducts.length, (index) {
+                  final product = diwaliProducts[index];
+                  return Padding(
+                    padding: const EdgeInsets.only(right: 12),
+                    child: MegadawaliProducts(
+                      title: product['title']!,
+                      imagePath: product['image']!,
+                      time: product['time']!,
+                      price: product['price']!,
+                      onAddPressed: () {
+                        print("${product['title']} added!");
+                      },
                     ),
-                    SizedBox(height: 4),
-                    Text(
-                      '16 MINS',
-                      style: TextStyle(color: Color(0xFF9C9C9C), fontSize: 14),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 4),
-                // Price Part
-                Text(
-                  '₹79',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                ),
-              ],
+                  );
+                }),
+              ),
+            ),
+          ),
+          SizedBox(height: 10),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: const Text(
+              "Grocery & Kitchen",
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w700,
+                letterSpacing: -0.3,
+              ),
+            ),
+          ),
+          const SizedBox(height: 10),
+          // Household Essentials Category
+          Padding(
+            padding: const EdgeInsets.only(left: 13),
+            child: SizedBox(
+              height: 110,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: snacksAndDrinksProducts.length,
+                padding: const EdgeInsets.only(right: 16),
+                itemBuilder: (context, index) {
+                  return ProductCategoryItem(
+                    imagePath: snacksAndDrinksProducts[index]['image'],
+                    title: snacksAndDrinksProducts[index]['title'],
+                  );
+                },
+              ),
             ),
           ),
         ],
